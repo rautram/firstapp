@@ -12,18 +12,11 @@ class _MyRidesScreenState extends State<MyRidesScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.white,
-          title: Row(
-            children: const [
-              Icon(
-                Icons.menu,
-                color: Colors.black,
-                size: 30.0,
-              ),
-            ],
-          )),
+        title: const Text("My Rides"),
+      ),
       body: Container(
-        
+        padding: const EdgeInsets.all(20.0),
+        child: Column(),
       ),
     );
   }

@@ -2,8 +2,13 @@ import 'package:flutter/material.dart';
 
 class SimpleButton extends StatelessWidget {
   final String title;
+  final bool isLoading;
   final Function onPressed;
-  const SimpleButton({Key? key, required this.title, required this.onPressed})
+  const SimpleButton(
+      {Key? key,
+      required this.title,
+      required this.onPressed,
+      this.isLoading = false})
       : super(key: key);
 
   @override
@@ -21,11 +26,15 @@ class SimpleButton extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text(
-                title,
-                style: const TextStyle(
-                    color: Colors.white, fontWeight: FontWeight.bold),
-              ),
+              isLoading
+                  ? const CircularProgressIndicator(
+                      color: Colors.white,
+                    )
+                  : Text(
+                      title,
+                      style: const TextStyle(
+                          color: Colors.white, fontWeight: FontWeight.bold),
+                    ),
             ],
           ),
         ),

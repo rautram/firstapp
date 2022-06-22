@@ -1,7 +1,15 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:liftdedo/screens/main/myrides_screen.dart';
+import 'package:liftdedo/firebase_options.dart';
+import 'package:liftdedo/screens/landing/driver_registration_screen.dart';
+import 'package:liftdedo/screens/landing/landing_screen.dart';
+import 'package:liftdedo/screens/landing/upload_documents_screen.dart';
+import 'package:liftdedo/screens/main/dashboard_screen.dart';
+import 'package:liftdedo/screens/mobile_number_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 
@@ -23,9 +31,9 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
-      home: const MyRidesScreen(),
+      home: const LandingScreen(),
     );
   }
 }

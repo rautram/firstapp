@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:liftdedo/screens/mobile_number_screen.dart';
-import 'package:liftdedo/widgets/common/SimpleButton.dart';
+import 'package:liftdedo/widgets/common/simple_button.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

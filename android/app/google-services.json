@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "790695937165",
+    "project_id": "liftdedo-8de4a",
+    "storage_bucket": "liftdedo-8de4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790695937165:android:be2bc9a3b3c70e23d74ec4",
+        "android_client_info": {
+          "package_name": "com.example.liftdedo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790695937165-1tkdj3sqadg5nc86ddj7mdav35bm7gs6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.liftdedo",
+            "certificate_hash": "025e96c317daf8dfc97ac1ed4428eaf155583f41"
+          }
+        },
+        {
+          "client_id": "790695937165-b1thqjeu6l1smkkhr8spq1gg16gckf52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGeWtLdH1fzp_eBJwpnd_38t0yjPBahmQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "790695937165-b1thqjeu6l1smkkhr8spq1gg16gckf52.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
